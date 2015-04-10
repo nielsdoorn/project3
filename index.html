@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bouwbedrijf Pillen</title>
+		<link rel="stylesheet" href="style.css">
+
+
+		<script>
+
+			window.setInterval(execute, 5000);
+
+
+				var imageCount = 0;
+
+
+			function execute() {
+
+				console.log("bla");
+
+				var imageCount = imageCount + 1;
+
+					if(imageCount == 0){
+						document.style.background = "url('huis1.jpg')";
+						console.log("huis1");
+					}
+
+					else if(imageCount == 1){
+						document.style.background = "url('huis2.jpg')";
+						console.log("huis2");
+					}
+
+					else if(imageCount == 2){
+						document.style.background = "url('huis3.jpg')";
+						console.log("huis3");
+					}
+
+					if(imageCount == 2){
+						imageCount = 0;
+					}
+
+			
+			}
+
+		</script>
+
+
+	</head>
+
+	<body>
+
+		<div id="overlay">
+		
+
+
+
+		</div>
+
+	</body>
+
+</html>
+
+
