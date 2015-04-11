@@ -7,41 +7,26 @@
 
 
 		<script>
-
 			window.setInterval(execute, 5000);
-
-
-				var imageCount = 0;
-
-
+			var imageCount = 0;
 			function execute() {
+				imageCount = imageCount + 1;
+				if(imageCount == 0){
+					document.body.style.backgroundImage = "url('http://placebear.com/2100/3000')";
+				}
 
-				console.log("bla");
+				else if(imageCount == 1){
+					document.body.style.backgroundImage = "url('http://placebear.com/1200/1600')";
+				}
 
-				var imageCount = imageCount + 1;
+				else if(imageCount == 2){
+					document.body.style.backgroundImage = "url('http://placebear.com/1200/300')";
+				}
 
-					if(imageCount == 0){
-						document.style.background = "url('huis1.jpg')";
-						console.log("huis1");
-					}
-
-					else if(imageCount == 1){
-						document.style.background = "url('huis2.jpg')";
-						console.log("huis2");
-					}
-
-					else if(imageCount == 2){
-						document.style.background = "url('huis3.jpg')";
-						console.log("huis3");
-					}
-
-					if(imageCount == 2){
-						imageCount = 0;
-					}
-
-			
+				if(imageCount == 2){
+					imageCount = 0;
+				}
 			}
-
 		</script>
 
 
